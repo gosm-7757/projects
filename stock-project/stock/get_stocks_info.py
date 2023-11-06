@@ -39,7 +39,7 @@ def check_stock(file_ob1):
 def add_stock(read_file):
     key = input("株の名前入力 => ")
     value = input("株のコードを入力 => ")
-    with open('D:/python_web_crawling/learning_crawling/stock/stock_items.txt', 'a', encoding='UTF-8') as append_file:
+    with open('D:/포폴/stock-project/stock/stock_items.txt', 'a', encoding='UTF-8') as append_file:
         append_file.write(f'\n{key}:{value}')
     print("株入力完了")
 
@@ -76,9 +76,9 @@ def prt_stock_info(file_ob3):
 
 # 株の状況を保存するファンクション
 def save_result(stock_name, img, result_ob) :
-    with open('D:/python_web_crawling/learning_crawling/stock/save_stock_info.txt', 'a', encoding='UTF-8') as save_file:
+    with open('D:/포폴/stock-project/stock/save_stock_info.txt', 'a', encoding='UTF-8') as save_file:
         # チャートを保存するコード
-        urllib.request.urlretrieve(img, f'D:/python_web_crawling/learning_crawling/stock/사진저장/{stock_name}.png')
+        urllib.request.urlretrieve(img, f'D:/포폴/stock-project/stock/사진저장/{stock_name}.png')
         # 保存した時間
         tm = time.strftime("%Y年 %m月 %d日  %H : %M") 
         save_file.write("----------\n株名 : " + stock_name + "\n" + tm + "\n\n")
@@ -94,7 +94,7 @@ result = {}        # 現在状況を入れるディクショナリー
 
 
 # 実行部分
-with open('D:/python_web_crawling/learning_crawling/stock/stock_items.txt', 'r', encoding='UTF-8') as read_file :
+with open('D:/포폴/stock-project/stock/stock_items.txt', 'r', encoding='UTF-8') as read_file :
     while True:
         stop = prtmenu(read_file) # ユーザーに見せるメニューのファンクション呼出
         if stop == "stop": # リターンの値が「stop」であれば繰り返し脱出
