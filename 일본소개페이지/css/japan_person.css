@@ -1,0 +1,826 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "맑은 고딕", "Malgun Gothic", Gothic, sans-serif;
+}
+/*페이지 설정*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* .이미지{ overflow: hidden; margin-left: 50px;}
+.이미지 > img{transition:transform 0.5s;}
+.이미지:hover > img{transform: translate(0,0) scale(1.1);} */
+/*대가리*/
+.페이지래핑 {
+  width: 1000px;
+  height: auto;
+  /* background: white; */
+  margin: 40px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 10px solid rgb(242, 217, 133);
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  background: rgb(83, 83, 89);
+}
+
+body {
+  background-image: url("../images/125.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  /* margin-top:25px; */
+  /* margin-bottom: 20px; */
+  position: relative;
+  margin: 0;
+  width: 1000px;
+  height: 100px;
+  display: inline-block;
+}
+
+#audio {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  border: 5px solid aqua;
+  border-radius: 35px;
+  color: yellow;
+  transition: all.5s;
+}
+
+#audio:hover {
+  border-color: orangered;
+  transition: all.5s;
+}
+
+#audiotitle {
+  position: absolute;
+  right: 90px;
+  top: 0px;
+  color: yellow;
+  font-style: italic;
+}
+
+#제목 {
+  text-align: center;
+  font-style: italic;
+  color: white; /* line-height: 50px; */
+  position: absolute;
+  left: 400px;
+  bottom: 25px;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+}
+
+#제목:hover {
+  background: aqua;
+  width: 250px;
+  height: 50px;
+  bottom: 20px;
+  border: 5px solid purple;
+  border-radius: 30px;
+  left: 370px;
+  transition: all 0.5s;
+  color: black;
+}
+
+#제목:hover #dop {
+  display: none;
+}
+#제목:hover #nop {
+  display: block;
+}
+
+#nop {
+  display: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.아이디창 {
+  width: 300px;
+  height: 90px;
+}
+
+fieldset {
+  border: 5px solid yellow;
+  border-radius: 20px;
+  position: relative;
+}
+
+#logbutton {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 4px;
+  margin-left: 5px;
+  background-color: rgb(72, 72, 74);
+  border: 3px solid aqua;
+  border-radius: 10px;
+  color: white;
+  transition: all.3s;
+}
+
+#logbutton:hover {
+  color: yellow;
+  border-color: green;
+  transition: all.3s;
+  font-size: 16px;
+}
+
+#id {
+  margin-left: 5px;
+}
+
+legend {
+  text-align: center;
+  color: aqua;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+form {
+  color: white;
+}
+
+.아디 {
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 3px solid greenyellow;
+  color: white;
+  background: gray;
+}
+
+.아디:hover {
+  border-color: aqua;
+  background: black;
+  transition: all 0.5s;
+}
+
+/*-------------------네비!!!!!----------------------------------------------------------------------------------*/
+
+.네비 {
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 40px;
+  background-color: black;
+}
+
+.메뉴 {
+  float: left;
+  position: relative;
+  transition: all 0.5s;
+  color: white;
+}
+
+.메뉴:hover {
+  background: rgb(15, 16, 28);
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.메뉴 * {
+  text-align: center;
+}
+
+.메뉴이름 {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 150px;
+  padding: 5px 0;
+  margin: 0 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.내부메뉴 {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 165px;
+  height: 0;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+  z-index: 1000;
+  text-align: center;
+}
+
+.내부메뉴이름 > a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  font-style: italic;
+}
+
+.내부메뉴이름 > a:hover {
+  background: rgb(15, 16, 28);
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.메뉴:hover .내부메뉴 {
+  height: 310%;
+  border-bottom: 3px solid orange;
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
+  transition: all 0.5s;
+  background: black;
+  border-radius: 0 0 20px 20px;
+}
+/*------------------------검색창!!!!!-------------------------------------------------------------*/
+.오른쪽 {
+  float: right;
+}
+.검색 {
+  height: 26px;
+  padding: 7px;
+}
+
+.검색창 {
+  display: block;
+  float: left;
+  background-color: rgb(196, 242, 215);
+  border: 1px solid aqua;
+  border-radius: 15px 0 0 15px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: 200px;
+  height: 24px;
+  padding: 0 0 0 10px;
+  font-size: 12px;
+  color: black;
+  transition: all 0.5s;
+}
+
+.검색창:focus {
+  /* border-color:red; */
+  outline: 0;
+  background-color: rgb(228, 216, 242);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.검색:hover .검색창 {
+  border-color: orangered;
+  transition: all 0.5s;
+}
+.검색:hover .검색버튼 {
+  border-color: orangered;
+  transition: all 0.5s;
+}
+
+.검색버튼 {
+  width: 50px;
+  height: 26px;
+  border-radius: 0 15px 15px 0;
+  border: 1px solid aqua;
+  margin-top: 0.4px;
+  margin-left: -1px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+/*------------------------------------------------------------------------------------*/
+/*몸뚱아리*/
+#본문 {
+  overflow: hidden;
+  width: 1000px;
+  height: 1050px;
+  position: relative;
+  background: rgb(165, 166, 168);
+  margin-bottom: 30px;
+  border-radius: 5px 5px 10px 10px;
+  border: 3px solid orangered;
+  margin-left: -1.5px;
+}
+
+.본문네비 {
+  overflow: hidden;
+  width: 1000px;
+  height: 35px;
+}
+.aboutjapan {
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  border: 3px solid aqua;
+  color: yellow;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+.aboutjapan {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.aboutjapan:hover {
+  border-radius: 10px;
+  width: 180px;
+  border-color: orangered;
+  background: black;
+  color: aqua;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.backbutton {
+  float: right;
+  margin-right: 5px;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 3px solid aqua;
+  color: yellow;
+  border-radius: 10px;
+}
+.backbutton b {
+  display: none;
+}
+
+.backbutton:hover {
+  width: 200px;
+  border: 3px solid yellow;
+  background: darkgray;
+  color: aqua;
+  transition: all.2s;
+}
+.backbutton:hover b {
+  display: inline;
+}
+
+.radios {
+  position: absolute;
+  left: -100px;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+.일본1 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  border-radius: 20px;
+  margin-left: 125px;
+}
+
+.후미오 {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid yellow;
+}
+
+.기시다 {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  border: 3px solid greenyellow;
+  border-radius: 20px;
+}
+.기시다 img {
+  border: 5px solid greenyellow;
+  border-radius: 20px;
+  height: 400px;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.후미오내용 {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 300px;
+  right: 70px;
+  background-color: gray;
+  border: 5px solid yellow;
+  border-radius: 20px;
+}
+.후미오내용 h3 {
+  line-height: 50px;
+}
+.후미오내용:hover {
+  background-color: black;
+  border-color: green;
+  transition: all.5s;
+}
+.후미오내용:hover h3 {
+  color: aqua;
+}
+
+.자위대 {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  position: absolute;
+  left: 270px;
+  top: 550px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid yellow;
+}
+
+.깃발 {
+  width: 400px;
+  height: 320px;
+  position: absolute;
+  left: 270px;
+  top: 650px;
+  border-radius: 20px;
+  border: 5px solid greenyellow;
+  transition: all.5s;
+}
+.깃발:hover {
+  width: 600px;
+  left: 170px;
+  transition: all.5s;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.일본2 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+}
+
+.어둠호버 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  margin: 20px 0;
+  margin-left: 280px;
+}
+.어둠호버 * {
+  position: absolute;
+}
+.어둠 {
+  width: 400px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.어둠호버 h1 {
+  width: 300px;
+  text-align: center;
+  left: 50px;
+  top: -40px;
+  color: white;
+  font-style: italic;
+}
+
+.어둠호버:hover .어둠 {
+  display: block;
+  transition: all.5s;
+}
+.어둠호버:hover h1 {
+  top: 30px;
+  transition: all.5s;
+}
+.어둠호버:hover {
+  border: 5px solid yellow;
+  border-radius: 30px;
+  transition: all.5s;
+  margin-left: 275px;
+}
+
+.펀쿨섹 {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  border: 5px solid greenyellow;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px auto;
+}
+
+.펀쿨섹:hover {
+  width: 500px;
+  border-color: yellow;
+  color: aqua;
+  font-style: italic;
+  background-color: black;
+  transition: all.5s;
+}
+.펀쿨섹 + p {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  overflow: hidden;
+  height: 0;
+}
+.펀쿨섹:hover + p {
+  height: 100%;
+  color: pink;
+  margin-top: 100px;
+}
+/*-------------------------------------------------------------------*/
+
+.일본3 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+}
+.천황 {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  position: absolute;
+  left: 280px;
+  top: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid yellow;
+}
+.천황:hover {
+  background-color: black;
+  color: yellow;
+  border-left: 5px solid yellow;
+  border-right: 5px solid yellow;
+  border-bottom: 0;
+  border-top: 0;
+  transition: all.5s;
+}
+
+.천황1 {
+  position: absolute;
+  left: 80px;
+  top: 120px;
+  border: 5px solid aqua;
+  border-radius: 20px;
+}
+.황족 {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  position: absolute;
+  left: 465px;
+  top: 570px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid yellow;
+}
+.황족1 img {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  left: 75px;
+  top: 650px;
+  border-radius: 20px;
+  border: 5px solid red;
+}
+.천황내용 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 80px;
+  top: 125px;
+  background-color: gray;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+.천황내용 h3 {
+  line-height: 55px;
+}
+
+.천황내용:hover {
+  background-color: black;
+  border: 5px solid yellow;
+  border-radius: 30px;
+  transition: all.5s;
+}
+.천황내용:hover h3 {
+  color: aqua;
+  transition: all.5s;
+}
+/*-------------------------------------------------------------------------*/
+
+.일본4 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+}
+.개그맨 {
+  width: 400px;
+  height: 100px;
+  line-height: 50px;
+  background-color: gray;
+  top: 30px;
+  position: absolute;
+  left: 300px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid yellow;
+}
+.개그맨1 {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  width: 400px;
+}
+.진나이내용 {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  background-color: gray;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+.진나이내용 h3 {
+  line-height: 50px;
+}
+.진나이내용:hover {
+  background-color: black;
+  border: 5px solid orangered;
+  border-radius: 30px;
+  transition: all.5s;
+}
+.진나이내용:hover h3 {
+  color: aqua;
+  transition: all.5s;
+}
+
+/*------------------------------*/
+#data1:checked + .일본1 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data2:checked + .일본2 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data3:checked + .일본3 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data4:checked + .일본4 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+
+/*--------------밑바닥!!!-------------------------------------------------------------*/
+#main-footer {
+  position: relative;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  height: 20px;
+}
+
+.intro {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  width: 200px;
+  height: 30px;
+  border: 3px solid greenyellow;
+  border-radius: 20px;
+}
+.intro h3 {
+  line-height: 30px;
+  color: black;
+}
+.배경화살표 {
+  display: none;
+}
+
+.intro:hover {
+  width: 230px;
+  background: darkgray;
+  border: 3px solid aqua;
+  transition: all 0.2s;
+}
+.intro:hover h3 {
+  color: yellow;
+  transition: all 0.2s;
+}
+.intro:hover .배경화살표 {
+  display: inline;
+  color: aqua;
+  transition: all 0.2s;
+}
+#overflow {
+  overflow: hidden;
+}
+.container {
+  width: 500vw;
+  transition: transform 0.5s;
+}
+.inner {
+  float: left;
+}
+.inner img {
+  height: 250px;
+  width: 100vw;
+}
+
+.buttonbox {
+  /* position: absolute; */
+  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: 4px solid aqua;
+  transition: all 1s;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.buttons {
+  margin-left: 78px;
+  width: 100px;
+  height: 35px;
+  position: relative;
+  display: none;
+}
+
+button {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 30px;
+  background: rgb(218, 237, 23);
+  background: linear-gradient(
+    172deg,
+    rgba(218, 237, 23, 1) 23%,
+    rgba(255, 176, 17, 1) 100%
+  );
+}
+
+h3 {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+
+.buttonbox:hover .buttons {
+  display: inline-block;
+}
+.buttonbox:hover {
+  width: 1000px;
+  background-color: gray;
+  border: 5px solid orange;
+}
+.buttonbox:hover h3 {
+  display: none;
+}
+
+.buttons:hover button {
+  border: 5px solid aqua;
+  width: 150px;
+  height: 30px;
+  margin-top: 5px;
+  transition: all 0.7s;
+  background: black;
+}
+
+i {
+  display: none;
+  color: white;
+  font-weight: 900;
+}
+.buttons:hover i {
+  display: inline;
+}

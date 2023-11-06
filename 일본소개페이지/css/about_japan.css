@@ -1,0 +1,1339 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "맑은 고딕", "Malgun Gothic", Gothic, sans-serif;
+}
+/*페이지 설정*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* .이미지{ overflow: hidden; margin-left: 50px;}
+.이미지 > img{transition:transform 0.5s;}
+.이미지:hover > img{transform: translate(0,0) scale(1.1);} */
+/*대가리*/
+.페이지래핑 {
+  width: 1000px;
+  height: auto;
+  /* background: white; */
+  margin: 40px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 10px solid rgb(242, 217, 133);
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  background: rgb(83, 83, 89);
+}
+
+body {
+  background-image: url("../images/125.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  /* margin-top:25px; */
+  /* margin-bottom: 20px; */
+  position: relative;
+  margin: 0;
+  width: 1000px;
+  height: 100px;
+  display: inline-block;
+}
+
+#audio {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  border: 5px solid aqua;
+  border-radius: 35px;
+  color: yellow;
+  transition: all.5s;
+}
+
+#audio:hover {
+  border-color: orangered;
+  transition: all.5s;
+}
+
+#audiotitle {
+  position: absolute;
+  right: 90px;
+  top: 0px;
+  color: yellow;
+  font-style: italic;
+}
+
+#제목 {
+  text-align: center;
+  font-style: italic;
+  color: white; /* line-height: 50px; */
+  position: absolute;
+  left: 400px;
+  bottom: 25px;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+}
+
+#제목:hover {
+  background: aqua;
+  width: 250px;
+  height: 50px;
+  bottom: 20px;
+  border: 5px solid purple;
+  border-radius: 30px;
+  left: 370px;
+  transition: all 0.5s;
+  color: black;
+}
+
+#제목:hover #dop {
+  display: none;
+}
+#제목:hover #nop {
+  display: block;
+}
+
+#nop {
+  display: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.아이디창 {
+  width: 300px;
+  height: 90px;
+}
+
+fieldset {
+  border: 5px solid yellow;
+  border-radius: 20px;
+  position: relative;
+}
+
+#logbutton {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 4px;
+  margin-left: 5px;
+  background-color: rgb(72, 72, 74);
+  border: 3px solid aqua;
+  border-radius: 10px;
+  color: white;
+  transition: all.3s;
+}
+
+#logbutton:hover {
+  color: yellow;
+  border-color: green;
+  transition: all.3s;
+  font-size: 16px;
+}
+
+#id {
+  margin-left: 5px;
+}
+
+legend {
+  text-align: center;
+  color: aqua;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+form {
+  color: white;
+}
+
+.아디 {
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 3px solid greenyellow;
+  color: white;
+  background: gray;
+}
+
+.아디::-webkit-input-placeholder {
+  color: white;
+}
+
+.아디:hover {
+  border-color: aqua;
+  background: black;
+  transition: all 0.5s;
+}
+
+/*-------------------네비!!!!!----------------------------------------------------------------------------------*/
+
+.네비 {
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 40px;
+  background-color: black;
+}
+
+.메뉴 {
+  float: left;
+  position: relative;
+  transition: all 0.5s;
+  color: white;
+}
+
+.메뉴:hover {
+  background: rgb(15, 16, 28);
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.메뉴 * {
+  text-align: center;
+}
+
+.메뉴이름 {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 150px;
+  padding: 5px 0;
+  margin: 0 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.내부메뉴 {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 165px;
+  height: 0;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+  z-index: 1000;
+  text-align: center;
+}
+
+.내부메뉴이름 > a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  font-style: italic;
+}
+
+.내부메뉴이름 > a:hover {
+  background: rgb(15, 16, 28);
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.메뉴:hover .내부메뉴 {
+  height: 310%;
+  border-bottom: 3px solid orange;
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
+  transition: all 0.5s;
+  background: black;
+  border-radius: 0 0 20px 20px;
+}
+/*------------------------검색창!!!!!-------------------------------------------------------------*/
+.오른쪽 {
+  float: right;
+}
+.검색 {
+  height: 26px;
+  padding: 7px;
+}
+
+.검색창 {
+  display: block;
+  float: left;
+  background-color: rgb(196, 242, 215);
+  border: 1px solid aqua;
+  border-radius: 15px 0 0 15px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: 200px;
+  height: 24px;
+  padding: 0 0 0 10px;
+  font-size: 12px;
+  color: black;
+  transition: all 0.5s;
+}
+
+.검색창:focus {
+  /* border-color:red; */
+  outline: 0;
+  background-color: rgb(228, 216, 242);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.검색:hover .검색창 {
+  border-color: orangered;
+  transition: all 0.5s;
+}
+.검색:hover .검색버튼 {
+  border-color: orangered;
+  transition: all 0.5s;
+}
+
+.검색버튼 {
+  width: 50px;
+  height: 26px;
+  border-radius: 0 15px 15px 0;
+  border: 1px solid aqua;
+  margin-top: 0.4px;
+  margin-left: -1px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+/*------------------------------------------------------------------------------------*/
+/*몸뚱아리*/
+#본문 {
+  overflow: hidden;
+  width: 1000px;
+  height: 2000px;
+  position: relative;
+  background: rgb(165, 166, 168);
+  margin-bottom: 30px;
+  border-radius: 5px 5px 10px 10px;
+  border: 3px solid orangered;
+}
+
+.본문네비 {
+  overflow: hidden;
+  width: 1000px;
+  height: 35px;
+}
+.aboutjapan {
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  border: 3px solid aqua;
+  color: yellow;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+.aboutjapan {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.aboutjapan:hover {
+  border-radius: 10px;
+  width: 180px;
+  border-color: orangered;
+  background: black;
+  color: aqua;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.backbutton {
+  float: right;
+  margin-right: 5px;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 3px solid aqua;
+  color: yellow;
+  border-radius: 10px;
+}
+.backbutton b {
+  display: none;
+}
+
+.backbutton:hover {
+  width: 200px;
+  border: 3px solid yellow;
+  background: darkgray;
+  color: aqua;
+  transition: all.2s;
+}
+.backbutton:hover b {
+  display: inline;
+}
+
+.radios {
+  position: absolute;
+  left: -100px;
+}
+/*--------------------일본기본정보-------------------------------------------------------------------------------------------*/
+.일본1 {
+  position: absolute;
+  width: 950px;
+  height: 1950px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.firstheader {
+  margin: 20px 0;
+  width: 400px;
+  height: 50px;
+  border: 3px solid yellow;
+  line-height: 50px;
+  position: absolute;
+  left: 295px;
+  border-radius: 20px;
+}
+.titlename1 {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+.titlename1 > i {
+  display: none;
+}
+.titlename1:hover i {
+  display: inline;
+  color: aqua;
+  transition: all.5s;
+}
+.titlename1:hover {
+  background: black;
+  border-radius: 20px;
+  transition: all.5s;
+}
+.titlename1:hover b {
+  display: none;
+  transition: all.5s;
+}
+
+.국기 {
+  position: absolute;
+  left: 90px;
+  top: 100px;
+}
+.국기사진 {
+  margin-top: 4px;
+  border: 5px solid aqua;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+#국기제목 {
+  text-align: center;
+  margin: 20px 10px 20px 0;
+  font-size: 50px;
+  color: rgb(247, 220, 210);
+  font-style: italic;
+}
+#국기설명 {
+  text-align: center;
+  color: white;
+}
+#국기설명 > b {
+  color: orangered;
+}
+
+.인구 {
+  position: absolute;
+  top: 650px;
+}
+.인구사진:hover {
+  width: 350px;
+  margin-left: -25px;
+  height: 150px;
+  transition: all 0.3s;
+}
+.인구사진:hover + .고령화 {
+  display: block;
+}
+#인구설명 {
+  display: inline-block;
+  position: absolute;
+  top: 650px;
+  left: 250px;
+  color: whitesmoke;
+}
+#인구설명 > b {
+  color: orange;
+  text-decoration: underline;
+}
+.고령화 {
+  width: 200px;
+  border: 3px solid aqua;
+  text-align: center;
+  margin-left: 38px;
+  margin-top: 5px;
+  color: yellow;
+  display: none;
+  border-radius: 10px;
+}
+.인구표 {
+  position: absolute;
+  top: 950px;
+  left: 180px;
+}
+.인구표 > img {
+  border: 5px solid yellow;
+  border-top: 0;
+}
+.인구표 > h1 {
+  color: white;
+  text-align: center;
+  border: 3px solid aqua;
+  border-radius: 20px 20px 0 0;
+}
+
+.정리 {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+.정리 * {
+  text-align: center;
+}
+.정리제목 {
+  width: 300px;
+  border: 5px solid aqua;
+  margin-left: 120px;
+  font-size: 20px;
+  background-color: gray;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.정리제목:hover {
+  width: 400px;
+  margin: 10px auto;
+  border-radius: 20px;
+  background-color: black;
+  color: yellow;
+  transition: all.5s;
+}
+.정리 > p {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+.정리 > p > b {
+  color: yellow;
+  font-style: italic;
+}
+
+.정리상자1 {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  background-color: rgb(59, 56, 55);
+  border-radius: 20px;
+  color: yellow;
+}
+.안보임1 {
+  display: none;
+}
+
+.정리상자1:hover {
+  width: 300px;
+  background-color: black;
+  color: aqua;
+  border: 3px solid yellow;
+  transition: all 0.5s;
+}
+.정리상자1:hover .안보임1 {
+  display: block;
+  transition: all 0.5s;
+}
+.정리상자1:hover h2:first-child {
+  display: none;
+  transition: all 0.5s;
+}
+
+.정리상자2 {
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  background-color: rgb(59, 56, 55);
+  border-radius: 20px;
+  color: yellow;
+}
+.안보임2 {
+  display: none;
+}
+
+.정리상자2:hover {
+  width: 350px;
+  background-color: black;
+  color: aqua;
+  border: 3px solid yellow;
+  transition: all 0.5s;
+}
+.정리상자2:hover .안보임2 {
+  display: block;
+  transition: all 0.5s;
+}
+.정리상자2:hover h2:first-child {
+  display: none;
+  transition: all 0.5s;
+}
+
+/*------------------------일본의 명절-----------------------------------------------------------------------------------------*/
+
+.일본2 {
+  position: absolute;
+  width: 950px;
+  height: 1950px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#overflow2 {
+  overflow: hidden;
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  border: 3px solid orangered;
+  border-radius: 20px;
+}
+#명절사진 {
+  height: 300px;
+  width: 2400px;
+  float: left;
+  transition: all 0.5s;
+}
+.인너 {
+  float: left;
+}
+
+.명절제목 {
+  position: absolute;
+  left: 750px;
+  top: 45px;
+  width: 50px;
+  height: 300px;
+  line-height: 50px;
+  border: 5px solid aqua;
+  text-align: center;
+  border-radius: 20px;
+  color: white; /* font-style: italic; */
+}
+.명절제목:hover {
+  color: aqua;
+  background-color: black;
+  border: 5px solid yellow;
+  transition: all.5s;
+}
+
+.명절버튼 {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+}
+.명절버튼 button {
+  display: block;
+  width: 50px;
+  height: 40px;
+  background-color: black;
+  border: 3px solid yellowgreen;
+  border-radius: 20px;
+  color: aqua;
+}
+.명절버튼 button:nth-child(2) {
+  margin-top: 40px;
+}
+.명절버튼 button:nth-child(3) {
+  margin-top: 40px;
+}
+.명절버튼 button:nth-child(4) {
+  margin-top: 40px;
+}
+
+.명절버튼 button:hover {
+  color: yellowgreen;
+  background: rgb(15, 16, 28);
+  border: 3px solid aqua;
+  transition: all.5s;
+}
+
+.버튼1,
+.버튼2,
+.버튼3,
+.버튼4 {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.성인식 {
+  position: absolute;
+  left: 175px;
+  top: 400px;
+  border: 5px solid orangered;
+  border-radius: 20px;
+}
+#성인식 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+}
+#성인식 * {
+  display: block;
+  position: absolute;
+  border-radius: 20px;
+}
+.성인바탕 {
+  width: 600px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5); /*  z-index: 10; display: none; */
+}
+.성인바탕 h1 {
+  text-align: center;
+  width: 400px;
+  margin-left: 110px;
+  margin-top: 130px;
+  color: aqua;
+  display: none;
+}
+.성인식:hover .성인바탕 {
+  display: block;
+  z-index: 10;
+}
+
+#성인내용 {
+  position: absolute;
+  top: 700px;
+  left: 170px;
+}
+#성인내용 * {
+  margin: 20px auto;
+  text-align: center;
+}
+#성인내용 h1 {
+  color: white;
+  font-style: italic; /* border:3px solid aqua; */
+  width: 500px;
+}
+#성인내용 h1:hover {
+  border: 3px solid aqua;
+  background-color: black;
+  color: yellow;
+  border-radius: 20px;
+  transition: all.5s;
+}
+#성인내용 p {
+  color: white;
+}
+#성인내용 p b {
+  color: yellow;
+}
+#성인내용 p ins {
+  color: greenyellow;
+}
+
+.오봉 {
+  position: absolute;
+  left: 175px;
+  top: 1000px;
+  border: 5px solid orangered;
+  border-radius: 20px;
+}
+#오봉 {
+  position: relative;
+  width: 600px;
+  height: 300px;
+}
+#오봉 * {
+  display: block;
+  position: absolute;
+  border-radius: 20px;
+}
+.오봉바탕 {
+  width: 600px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5); /*  z-index: 10; display: none; */
+}
+.오봉바탕 h1 {
+  text-align: center;
+  width: 400px;
+  margin-left: 110px;
+  margin-top: 130px;
+  color: aqua;
+  display: none;
+}
+.오봉:hover .오봉바탕 {
+  display: block;
+  z-index: 10;
+}
+
+#오봉내용 {
+  position: absolute;
+  top: 1300px;
+  left: 100px;
+}
+#오봉내용 * {
+  margin: 20px auto;
+  text-align: center;
+}
+#오봉내용 h1 {
+  color: white;
+  font-style: italic; /*  border:3px solid aqua; */
+  width: 500px;
+}
+#오봉내용 h1:hover {
+  border: 3px solid aqua;
+  background-color: black;
+  color: yellow;
+  border-radius: 20px;
+  transition: all.5s;
+}
+#오봉내용 p {
+  color: white;
+}
+#오봉내용 p b {
+  color: yellow;
+}
+#오봉내용 p ins {
+  color: greenyellow;
+}
+
+.주요행사 label {
+  background-color: black;
+  border-radius: 20px;
+  color: aqua;
+  border: 3px solid yellow;
+  cursor: pointer;
+  display: inline-block;
+  width: 140px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.주요행사 label:hover {
+  width: 140px;
+  background-color: gray;
+  border-color: aqua;
+  color: yellow;
+  transition: all.5s;
+}
+.주요행사 {
+  position: absolute;
+  bottom: 280px;
+  left: 20px;
+  width: 1200px;
+}
+
+.무카에비 {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  bottom: 30px;
+  left: 220px;
+  border: 3px solid orangered;
+  border-radius: 20px;
+  display: none;
+}
+.무카에비 img {
+  border-radius: 20px;
+}
+
+input[name="행사사진"]:checked + .무카에비 {
+  display: block;
+}
+input[name="행사사진"] {
+  display: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+.일본3 {
+  position: absolute;
+  width: 950px;
+  height: 1950px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.지리적특징대가리 {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border: 5px solid orangered;
+  background-color: gray;
+  text-align: center;
+  border-radius: 20px;
+  color: yellow;
+  margin: 20px auto;
+  font-style: italic;
+}
+.지리적특징대가리 .가려 {
+  display: none;
+}
+.지리적특징대가리:hover .가려 {
+  display: block;
+  transition: all.5s;
+}
+.지리적특징대가리:hover h1:first-child {
+  display: none;
+  transition: all.5s;
+}
+.지리적특징대가리:hover {
+  width: 500px;
+  border: 5px solid yellow;
+  color: aqua;
+  background-color: black;
+  transition: all.5s;
+}
+
+.지도 {
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.지도 iframe {
+  border-radius: 20px;
+  border: 5px solid orangered;
+}
+
+.일본자연 {
+  margin-top: 60px;
+  width: 100%;
+}
+#일단안보여 {
+  margin-left: 175px;
+  border: 5px solid yellow;
+  border-radius: 20px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+.자연이름 {
+  margin: 20px auto;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  background-color: gray;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid aqua;
+  transition: all 0.5s;
+}
+.일본자연 p {
+  color: white;
+  text-align: center;
+  margin: 10px 30px;
+}
+.자연이름:hover {
+  width: 500px;
+  background-color: black;
+  color: aqua;
+  border-color: orangered;
+  transition: all.5s;
+}
+.자연이름:hover + #일단안보여 {
+  height: 250px;
+  transition: all 1s;
+  border-color: green;
+}
+.자연이름:hover + #일단안보여 + p {
+  color: bisque;
+}
+.자연이름:hover + #일단안보여 + p b {
+  color: yellow;
+}
+
+.일본인특징 {
+  position: absolute;
+  left: 180px;
+  margin-top: 30px;
+}
+.인간특징 {
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 97.5px;
+  border: 5px solid yellow;
+  text-align: center;
+  background-color: gray;
+  border-radius: 30px;
+  color: aqua;
+  transition: all 0.5s;
+  margin-bottom: 40px;
+}
+
+.인간특징:hover {
+  width: 600px;
+  background-color: black;
+  border: 5px solid greenyellow;
+  border-radius: 20px;
+  margin-left: -2.5px;
+  transition: all 0.5s;
+}
+
+.일본인특징 img {
+  overflow: hidden;
+  height: 0;
+  transition: all.5s;
+}
+.일본인특징 div {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  height: 0;
+}
+.특징1 {
+  text-align: center;
+  border: 1px solid red;
+  width: 300px;
+  margin-left: 150px;
+  border-radius: 20px;
+  color: beige;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(186, 186, 184);
+  transition: all.5s;
+}
+
+.특징1:hover {
+  background-color: rgb(100, 100, 100);
+  color: greenyellow;
+  border-color: aqua;
+  width: 500px;
+  margin-left: 50px;
+  transition: all.5s;
+}
+#특이1:hover + img {
+  height: 250px;
+  transition: all.5s;
+  border: 3px solid aqua;
+  border-radius: 20px;
+}
+#특이1:hover + img + div {
+  height: 50px;
+  line-height: 50px;
+  color: yellow;
+}
+
+#특이2:hover + img {
+  height: 250px;
+  transition: all.5s;
+  border: 3px solid aqua;
+  border-radius: 20px;
+}
+#특이2:hover + img + div {
+  height: 50px;
+  line-height: 50px;
+  color: yellow;
+}
+
+#특이3:hover + img {
+  height: 250px;
+  transition: all.5s;
+  border: 3px solid aqua;
+  border-radius: 20px;
+}
+#특이3:hover + img + div {
+  height: 50px;
+  line-height: 50px;
+  color: yellow;
+}
+
+#특이4:hover + img {
+  height: 250px;
+  transition: all.5s;
+  border: 3px solid aqua;
+  border-radius: 20px;
+}
+#특이4:hover + img + div {
+  height: 50px;
+  line-height: 50px;
+  color: yellow;
+}
+
+.빈곳 {
+  position: absolute;
+  bottom: 20px;
+  background-color: white;
+  width: 100%;
+}
+.빈곳 img {
+  animation-name: 토끼;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes 토끼 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 900px;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+.일본4 {
+  position: absolute;
+  width: 950px;
+  height: 1950px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.첫번째신화 {
+  margin-top: 50px;
+}
+.첫번째신화 img {
+  margin-left: 322px;
+  border: 3px solid yellow;
+  border-radius: 20px;
+}
+.첫번째신화 p {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+.우라시마 {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid greenyellow;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+  border-radius: 20px;
+  font-style: italic;
+  transition: all.5s;
+}
+
+.우라시마:hover {
+  width: 300px;
+  border: 5px solid yellow;
+  color: orangered;
+  background-color: black;
+  transition: all.5s;
+}
+.우라시마:hover + img {
+  border: 5px solid red;
+  transition: all.5s;
+}
+.우라시마:hover + img + p {
+  color: aqua;
+}
+.우라시마:hover + img + p b {
+  color: yellow;
+}
+
+.두번째신화 {
+  margin-top: 80px;
+}
+.두번째신화 img {
+  margin-left: 322px;
+  border: 3px solid yellow;
+  border-radius: 20px;
+}
+.두번째신화 p {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+.모모타로 {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid yellow;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+  border-radius: 20px;
+  font-style: italic;
+  transition: all.5s;
+}
+
+.모모타로:hover {
+  width: 300px;
+  border: 5px solid yellow;
+  color: orangered;
+  background-color: black;
+  transition: all.5s;
+}
+.모모타로:hover + img {
+  border: 5px solid red;
+  transition: all.5s;
+}
+.모모타로:hover + img + p {
+  color: aqua;
+}
+.모모타로:hover + img + p b {
+  color: yellow;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+#data1:checked + .일본1 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data2:checked + .일본2 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data3:checked + .일본3 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data4:checked + .일본4 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+
+/*--------------밑바닥!!!-------------------------------------------------------------*/
+#main-footer {
+  position: relative;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  height: 20px;
+}
+
+.intro {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  width: 200px;
+  height: 30px;
+  border: 3px solid greenyellow;
+  border-radius: 20px;
+}
+.intro h3 {
+  line-height: 30px;
+  color: black;
+}
+.배경화살표 {
+  display: none;
+}
+
+.intro:hover {
+  width: 230px;
+  background: darkgray;
+  border: 3px solid aqua;
+  transition: all 0.2s;
+}
+.intro:hover h3 {
+  color: yellow;
+  transition: all 0.2s;
+}
+.intro:hover .배경화살표 {
+  display: inline;
+  color: aqua;
+  transition: all 0.2s;
+}
+
+#overflow {
+  overflow: hidden;
+}
+.container {
+  width: 500vw;
+  transition: transform 0.5s;
+}
+.inner {
+  float: left;
+}
+.inner img {
+  height: 250px;
+  width: 100vw;
+}
+
+.buttonbox {
+  /* position: absolute; */
+  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: 4px solid aqua;
+  transition: all 1s;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.buttons {
+  margin-left: 78px;
+  width: 100px;
+  height: 35px;
+  position: relative;
+  display: none;
+}
+
+.buttons button {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 30px;
+  background: rgb(218, 237, 23);
+  background: linear-gradient(
+    172deg,
+    rgba(218, 237, 23, 1) 23%,
+    rgba(255, 176, 17, 1) 100%
+  );
+}
+
+h3 {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+
+.buttonbox:hover .buttons {
+  display: inline-block;
+}
+.buttonbox:hover {
+  width: 1000px;
+  background-color: gray;
+  border: 5px solid orange;
+}
+.buttonbox:hover h3 {
+  display: none;
+}
+
+.buttons:hover button {
+  border: 5px solid aqua;
+  width: 150px;
+  height: 30px;
+  margin-top: 5px;
+  transition: all 0.7s;
+  background: black;
+}
+
+i {
+  display: none;
+  color: white;
+  font-weight: 900;
+}
+.buttons:hover i {
+  display: inline;
+}

@@ -1,0 +1,1011 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "맑은 고딕", "Malgun Gothic", Gothic, sans-serif;
+}
+/*페이지 설정*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* .이미지{ overflow: hidden; margin-left: 50px;}
+.이미지 > img{transition:transform 0.5s;}
+.이미지:hover > img{transform: translate(0,0) scale(1.1);} */
+/*대가리*/
+.페이지래핑 {
+  width: 1000px;
+  height: auto;
+  /* background: white; */
+  margin: 40px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 10px solid rgb(242, 217, 133);
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  background: rgb(83, 83, 89);
+}
+
+body {
+  background-image: url("../images/125.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  /* margin-top:25px; */
+  /* margin-bottom: 20px; */
+  position: relative;
+  margin: 0;
+  width: 1000px;
+  height: 100px;
+  display: inline-block;
+}
+
+#audio {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  border: 5px solid aqua;
+  border-radius: 35px;
+  color: yellow;
+  transition: all.5s;
+}
+
+#audio:hover {
+  border-color: orangered;
+  transition: all.5s;
+}
+
+#audiotitle {
+  position: absolute;
+  right: 90px;
+  top: 0px;
+  color: yellow;
+  font-style: italic;
+}
+
+#제목 {
+  text-align: center;
+  font-style: italic;
+  color: white; /* line-height: 50px; */
+  position: absolute;
+  left: 400px;
+  bottom: 25px;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+}
+
+#제목:hover {
+  background: aqua;
+  width: 250px;
+  height: 50px;
+  bottom: 20px;
+  border: 5px solid purple;
+  border-radius: 30px;
+  left: 370px;
+  transition: all 0.5s;
+  color: black;
+}
+
+#제목:hover #dop {
+  display: none;
+}
+#제목:hover #nop {
+  display: block;
+}
+
+#nop {
+  display: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.아이디창 {
+  width: 300px;
+  height: 90px;
+}
+
+fieldset {
+  border: 5px solid yellow;
+  border-radius: 20px;
+  position: relative;
+}
+
+#logbutton {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 4px;
+  margin-left: 5px;
+  background-color: rgb(72, 72, 74);
+  border: 3px solid aqua;
+  border-radius: 10px;
+  color: white;
+  transition: all.3s;
+}
+
+#logbutton:hover {
+  color: yellow;
+  border-color: green;
+  transition: all.3s;
+  font-size: 16px;
+}
+
+#id {
+  margin-left: 5px;
+}
+
+legend {
+  text-align: center;
+  color: aqua;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+form {
+  color: white;
+}
+
+.아디 {
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 3px solid greenyellow;
+  color: white;
+  background: gray;
+}
+
+.아디:hover {
+  border-color: aqua;
+  background: black;
+  transition: all 0.5s;
+}
+
+/*-------------------네비!!!!!----------------------------------------------------------------------------------*/
+
+.네비 {
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 40px;
+  background-color: black;
+}
+
+.메뉴 {
+  float: left;
+  position: relative;
+  transition: all 0.5s;
+  color: white;
+}
+
+.메뉴:hover {
+  background: rgb(15, 16, 28);
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.메뉴 * {
+  text-align: center;
+}
+
+.메뉴이름 {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 150px;
+  padding: 5px 0;
+  margin: 0 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.내부메뉴 {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 165px;
+  height: 0;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+  z-index: 1000;
+  text-align: center;
+}
+
+.내부메뉴이름 > a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  font-style: italic;
+}
+
+.내부메뉴이름 > a:hover {
+  background: rgb(15, 16, 28);
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.메뉴:hover .내부메뉴 {
+  height: 310%;
+  border-bottom: 3px solid orange;
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
+  transition: all 0.5s;
+  background: black;
+  border-radius: 0 0 20px 20px;
+}
+/*------------------------검색창!!!!!-------------------------------------------------------------*/
+.오른쪽 {
+  float: right;
+}
+.검색 {
+  height: 26px;
+  padding: 7px;
+}
+
+.검색창 {
+  display: block;
+  float: left;
+  background-color: rgb(196, 242, 215);
+  border: 1px solid aqua;
+  border-radius: 15px 0 0 15px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: 200px;
+  height: 24px;
+  padding: 0 0 0 10px;
+  font-size: 12px;
+  color: black;
+  transition: all 0.5s;
+}
+
+.검색창:focus {
+  /* border-color:red; */
+  outline: 0;
+  background-color: rgb(228, 216, 242);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.검색:hover .검색창 {
+  border-color: orangered;
+  transition: all 0.5s;
+}
+.검색:hover .검색버튼 {
+  border-color: orangered;
+  transition: all 0.5s;
+}
+
+.검색버튼 {
+  width: 50px;
+  height: 26px;
+  border-radius: 0 15px 15px 0;
+  border: 1px solid aqua;
+  margin-top: 0.4px;
+  margin-left: -1px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+/*------------------------------------------------------------------------------------*/
+/*몸뚱아리*/
+#본문 {
+  overflow: hidden;
+  width: 1000px;
+  height: 1050px;
+  position: relative;
+  background: rgb(165, 166, 168);
+  margin-bottom: 30px;
+  border-radius: 5px 5px 10px 10px;
+  border: 3px solid orangered;
+}
+
+.본문네비 {
+  overflow: hidden;
+  width: 1000px;
+  height: 35px;
+}
+.aboutjapan {
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  border: 3px solid aqua;
+  color: yellow;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+.aboutjapan {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.aboutjapan:hover {
+  border-radius: 10px;
+  width: 180px;
+  border-color: orangered;
+  background: black;
+  color: aqua;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.backbutton {
+  float: right;
+  margin-right: 5px;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 3px solid aqua;
+  color: yellow;
+  border-radius: 10px;
+}
+.backbutton b {
+  display: none;
+}
+
+.backbutton:hover {
+  width: 200px;
+  border: 3px solid yellow;
+  background: darkgray;
+  color: aqua;
+  transition: all.2s;
+}
+.backbutton:hover b {
+  display: inline;
+}
+
+.radios {
+  position: absolute;
+  left: -100px;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+.일본1 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 25px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.firstheader {
+  margin: 20px 0;
+  width: 400px;
+  height: 50px;
+  border: 3px solid yellow;
+  line-height: 50px;
+  position: absolute;
+  left: 275px;
+  border-radius: 20px;
+}
+.titlename1 {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.firstbody {
+  border: 2px solid aqua;
+  position: absolute;
+  left: 98px;
+  top: 100px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.일본2 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  margin: 25px 0;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.일본3 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.일본4 {
+  position: absolute;
+  width: 950px;
+  height: 1000px;
+  background-color: rgb(30, 32, 36);
+  display: none;
+  margin: 5px 0;
+  left: 125px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+#data1:checked + .일본1 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data2:checked + .일본2 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data3:checked + .일본3 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+#data4:checked + .일본4 {
+  display: block; /* height:100%; */
+  transition: all 0.5s;
+}
+
+/*--------------밑바닥!!!-------------------------------------------------------------*/
+#main-footer {
+  position: relative;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  height: 20px;
+}
+
+.intro {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  width: 200px;
+  height: 30px;
+  border: 3px solid greenyellow;
+  border-radius: 20px;
+}
+.intro h3 {
+  line-height: 30px;
+  color: black;
+}
+.배경화살표 {
+  display: none;
+}
+
+.intro:hover {
+  width: 230px;
+  background: darkgray;
+  border: 3px solid aqua;
+  transition: all 0.2s;
+}
+.intro:hover h3 {
+  color: yellow;
+  transition: all 0.2s;
+}
+.intro:hover .배경화살표 {
+  display: inline;
+  color: aqua;
+  transition: all 0.2s;
+}
+
+.뇌절:hover {
+  width: 230px;
+  background: darkgray;
+  border: 3px solid aqua;
+  transition: all 0.2s;
+}
+.뇌절:hover h3 {
+  color: yellow;
+  transition: all 0.2s;
+}
+.뇌절:hover .배경화살표 {
+  display: inline;
+  color: aqua;
+  transition: all 0.2s;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+}
+.contaner {
+  position: relative;
+  width: 750px;
+  height: 300px;
+  background-image: url(maturi.jpg);
+  margin: 90px;
+}
+.contaner span.text {
+  position: absolute;
+  display: none;
+  width: 100%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-align: center;
+  line-height: 300px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: 900;
+}
+.contaner::before,
+.contaner::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s;
+}
+.contaner::before {
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 0;
+}
+.contaner::after {
+  border-left: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  height: 0;
+}
+.contaner:hover span.text {
+  display: block;
+}
+.contaner:hover::before {
+  width: 95%;
+}
+.contaner:hover::after {
+  height: 95%;
+}
+
+.contanner {
+  background-color: black;
+  position: relative;
+  width: 750px;
+  height: 300px;
+  margin: 90px;
+}
+.contanner span.text {
+  position: absolute;
+  display: none;
+  width: 100%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-align: center;
+  line-height: 300px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: 900;
+}
+.box {
+  height: 550px;
+  width: 800px;
+  background: black;
+  vertical-align: center;
+  margin-top: 180px;
+  margin-left: 80px;
+}
+.box1 {
+  height: 800px;
+  width: 900px;
+  background: black;
+  vertical-align: center;
+  margin-top: 130px;
+  margin-left: 25px;
+  overflow: scroll;
+}
+img {
+  margin-top: 10px;
+}
+
+.section input [id*="slide"] {
+  padding: 0;
+  margin: 0;
+}
+
+.section .slidewrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+}
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.section .slidelist > li > a img {
+  width: 100%;
+}
+.section .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+
+.section .slidelist .left {
+  left: 30px;
+  background: url(tree.jpg.png) center center/ 100% no-repeat;
+  border: none;
+}
+.section .slidelist .right {
+  right: 30px;
+  background: url(tree2.jpg.png) center center/ 100% no-repeat;
+  border: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.dk .section label {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  border: 3px solid aqua;
+  border-radius: 20px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.imgss {
+  margin-top: 130px;
+  /*  margin-left: 100px; */
+  color: white;
+}
+.imgss1 {
+  margin-left: 100px;
+  color: aliceblue;
+}
+.imgss3 {
+  margin-left: 10px;
+}
+
+.imagebutton {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+
+
+#overflow {
+  overflow: hidden;
+}
+.container {
+  width: 500vw;
+  transition: transform 0.5s;
+}
+.inner {
+  float: left;
+}
+.inner img {
+  height: 250px;
+  width: 100vw;
+}
+
+.buttonbox {
+  /* position: absolute; */
+  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: 4px solid aqua;
+  transition: all 1s;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.buttons {
+  margin-left: 78px;
+  width: 100px;
+  height: 35px;
+  position: relative;
+  display: none;
+}
+
+button {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 30px;
+  background: rgb(218, 237, 23);
+  background: linear-gradient(
+    172deg,
+    rgba(218, 237, 23, 1) 23%,
+    rgba(255, 176, 17, 1) 100%
+  );
+}
+
+h3 {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+
+.buttonbox:hover .buttons {
+  display: inline-block;
+}
+.buttonbox:hover {
+  width: 1000px;
+  background-color: gray;
+  border: 5px solid orange;
+}
+.buttonbox:hover h3 {
+  display: none;
+}
+
+.buttons:hover button {
+  border: 5px solid aqua;
+  width: 150px;
+  height: 30px;
+  margin-top: 5px;
+  transition: all 0.7s;
+  background: black;
+}
+
+i {
+  display: none;
+  color: white;
+  font-weight: 900;
+}
+.buttons:hover i {
+  display: inline;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+}
+.contaner {
+  position: relative;
+  width: 750px;
+  height: 150px;
+  background-image: url(maturi1.jpg);
+  margin: 90px;
+}
+.contaner span.text {
+  position: absolute;
+  display: none;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 300px;
+  text-align: center;
+  color: yellow;
+  font-weight: 900;
+  line-height: 150px;
+}
+
+.contaner::before,
+.contaner::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s;
+}
+.contaner::before {
+  border-top: 2px solid greenyellow;
+  border-bottom: 2px solid greenyellow;
+  width: 0;
+}
+.contaner::after {
+  border-left: 2px solid greenyellow;
+  border-right: 2px solid greenyellow;
+  height: 0;
+}
+.contaner:hover span.text {
+  display: block;
+}
+.contaner:hover::before {
+  width: 95%;
+}
+.contaner:hover::after {
+  height: 95%;
+}
+
+.box {
+  height: 550px;
+  width: 850px;
+  background: black;
+  vertical-align: center;
+  margin-top: 180px;
+  margin-left: 45px;
+  border: 5px solid yellow;
+  border-radius: 20px;
+}
+.box1 {
+  height: 800px;
+  width: 900px;
+  background: black;
+  vertical-align: center;
+  margin-top: 130px;
+  margin-left: 25px;
+  overflow: scroll;
+}
+img {
+  margin-top: 10px;
+}
+
+.section .slidewrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+}
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.section .slidelist > li > a img {
+  width: 100%;
+}
+.section .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+
+.section [id="slide001"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.section [id="slide002"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.section [id="slide003"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+.section [id="slide004"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-300%);
+}
+.section [id="slide005"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-400%);
+}
+.section [id="slide006"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-500%);
+}
+.section [id="slide007"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-600%);
+}
+.section [id="slide008"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-700%);
+}
+.section [id="slide009"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-800%);
+}
+
+.section .slidelist .left {
+  left: 30px;
+  background: url(tree.jpg.png) center center/ 100% no-repeat;
+  border: none;
+}
+.section .slidelist .right {
+  right: 30px;
+  background: url(tree2.jpg.png) center center/ 100% no-repeat;
+  border: none;
+}
+
+.section input[id*="slide1"] {
+  display: none;
+}
+.section img {
+  margin-left: 2px;
+}
+
+.imgss {
+  margin-top: 80px;
+  margin-left: 1px;
+  margin-right: 10px;
+  color: white;
+}
+
+.imgss img {
+  width: 500px;
+  height: 300px;
+  margin-left: 180px;
+  border: 3px solid yellow;
+}
+.imgss p {
+  text-align: center;
+}
+.imgss h2 {
+  font-size: 50px;
+  color: aqua;
+}
+.imgss1 {
+  margin-left: 5px;
+  color: aliceblue;
+}
+
+.imagebutton {
+  margin-left: 90px;
+}
+
+.imgss1 img {
+  width: 500px;
+  height: 300px;
+  margin-left: 180px;
+  border: 3px solid yellow;
+}
+.imgss1 h2 {
+  font-size: 50px;
+  color: aqua;
+}
+.imgss1 p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section {
+  width: 800px;
+  margin-left: 40px;
+}
+
+.contaner img {
+  width: 600px;
+}
+.imgss {
+  margin-bottom: 25px;
+}
+
